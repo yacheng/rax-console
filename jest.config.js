@@ -12,6 +12,10 @@ module.exports = {
   'setupFiles': [
     'jest-localstorage-mock'
   ],
+  "moduleNameMapper": { 
+    '^.+\\.(bmp|gif|jpg|jpeg|png|psd|svg|webp)$': '<rootDir>/src/__mocks__/svgMock.js', 
+    '\\.(css|less)$': '<rootDir>/src/__mocks__/styleMock.js' 
+  },
   'testPathIgnorePatterns': [
     '/node_modules/',
     '/fixtures/',
